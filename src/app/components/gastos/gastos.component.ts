@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PresupuestoService } from 'src/app/services/presupuesto.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gastos',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gastos.component.css']
 })
 export class GastosComponent implements OnInit {
-
-  constructor() { }
+  presupuesto: number = 0
+  constructor(private presupuestoService: PresupuestoService, private router: Router) { }
 
   ngOnInit(): void {
+    if(this.presupuestoService.presupuesto === 0 ){
+      this.router.navigate(['/ingresarPresupuesto'])
+    }
   }
 
 }
