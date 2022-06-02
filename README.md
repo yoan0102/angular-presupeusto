@@ -1,6 +1,13 @@
 # Presupuesto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+> Este es un projecto donde pongo en practica lo aprendido en una semana de Angular framework
+
+## Tecnologías
+
+1. [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3
+2. [UI gradient](https://uigradients.com/)
+3. [Bootstrap](https://getbootstrap.com/)
+4. [Desploy](https://beamish-beijinho-cbab4f.netlify.app/ingresarPresupuesto)
 
 ## Development server
 
